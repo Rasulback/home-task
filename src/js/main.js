@@ -10,7 +10,7 @@
 //     alert('your entrance is first')
 // } else if (apartment <= 48 && apartment >= 21){
 //     alert('your entrance is second')
-// } else if (apartment <= 49 && apartment >= 90){
+// } else if (apartment <= 90 && apartment >= 49){
 //     alert('your entrance is third')
 // } else {
 //     alert('The apartment number is incorrect')
