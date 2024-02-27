@@ -10,9 +10,12 @@
 </head>
 <body>
 
-
 <button class="task7">9a</button>
+<hr>
+<br>
 <button class="js-btn">hello world</button>
+<hr>
+<br>
 
 <!--here is 9 task-->
 <button class="heads" onclick="
@@ -21,6 +24,29 @@ document.body.innerHTML = '<h1>your choice is: heads</h1>'.toUpperCase()
 <button class="tails" onclick="
 document.body.innerHTML = '<h1>your choice is: tails</h1>'.toUpperCase()
 ">tails</button>
+<br>
+<hr>
+<br>
+
+<!--task 12-->
+<button id="button-orel" onclick="playGame('orel')">orel</button>
+<button id="button-reshka" onclick="playGame('reshka')">reshka</button>
+<br>
+<br>
+<hr>
+<!--task 13-->
+<button onclick="showResult()">result</button>
+<button onclick="result('add')">add card</button>
+<button onclick="result('add2')">+2</button>
+<button onclick="result('add3')">+3</button>
+<button onclick="result('add4')">+4</button>
+<button onclick="result('add5')">+5</button>
+<button onclick="result('remove')">remove</button>
+<button onclick="result('remove2')">-2</button>
+<button onclick="result('remove3')">-3</button>
+<button onclick="result('remove4')">-4</button>
+<button onclick="result('remove5')">-5</button>
+<p id="text" class="text"></p>
 
 <script src="src/js/main.js"></script>
 </body>

@@ -113,11 +113,64 @@
 // document.body.innerText = (JSON.stringify(person, null, 2));
 
 // tsk12
+// let score = {
+//     wins: 0,
+//     losses: 0,
+// }
+// function playGame(userChoice) {
+//     let computerChoice = Math.random();
+//     if (computerChoice > 0.5) {
+//         computerChoice = "orel";
+//     } else {
+//         computerChoice = "reshka";
+//     }
+//     if (userChoice === computerChoice) {
+//         score.wins++
+//     } else {
+//         score.losses++
+//     }
+//     console.log(score);
+//     document.body.innerText = JSON.stringify(score);
+//     localStorage.setItem('score', JSON.stringify(score));
+//     console.log(localStorage);
+// }
 
 
 // tsk13
+let counter = 0;
+let text = document.getElementById('text');
+text.textContent = counter;
+function showResult() {
+    text.classList.toggle('text_active');
+}
 
-// tsk14
 
-// tsk15
+function result(value) {
+    if (value === 'add') {
+        counter++;
+    } else if (value === 'add2') {
+        counter += 2;
+    } else if (value === 'add3') {
+        counter += 3;
+    } else if (value === 'add4') {
+        counter += 4;
+    }else if (value === 'add5') {
+        counter += 5;
+    }
+
+    if (value === 'remove') {
+        counter > 0? counter-- : counter;
+    } else if (value === 'remove2') {
+        counter > 0? counter -= 2 : counter;
+    } else if (value === 'remove3') {
+        counter > 0? counter -= 3 : counter;
+    } else if (value === 'remove4') {
+        counter > 0? counter -= 4 : counter;
+    } else if (value === 'remove5') {
+        counter > 0? counter -= 5 : counter;
+    }
+    text.textContent  = counter;
+}
+
+
 
