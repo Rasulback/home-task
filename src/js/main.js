@@ -159,35 +159,22 @@
 // tsk13
 // let counter = 0;
 // let text = document.getElementById('text');
-// text.textContent = counter;
+// text.textContent = `Card quantity ${counter}`;
 // function showResult() {
 //     text.classList.toggle('text_active');
 // }
 // function result(value) {
-//     if (value === 'add') {
-//         counter++;
-//     } else if (value === 'add2') {
-//         counter += 2;
-//     } else if (value === 'add3') {
-//         counter += 3;
-//     } else if (value === 'add4') {
-//         counter += 4;
-//     }else if (value === 'add5') {
-//         counter += 5;
+//     if (value.startsWith('add')) {
+//         let increment = +value.slice(3) || 1;
+//         if (counter + increment <= 10) {
+//             counter += increment;
+//         }
+//     } else if (value.startsWith('remove')) {
+//         let decrement = +value.slice(6) || 1;
+//         if (counter - decrement >= 0) {
+//             counter -= decrement;
+//         }
 //     }
-//     if (value === 'remove') {
-//         counter > 0? counter-- : counter;
-//     } else if (value === 'remove2') {
-//         counter > 0? counter -= 2 : counter;
-//     } else if (value === 'remove3') {
-//         counter > 0? counter -= 3 : counter;
-//     } else if (value === 'remove4') {
-//         counter > 0? counter -= 4 : counter;
-//     } else if (value === 'remove5') {
-//         counter > 0? counter -= 5 : counter;
-//     }
-//     text.textContent  = counter;
+//     text.textContent = `Card quantity ${counter}`;
 // }
-
-
 
