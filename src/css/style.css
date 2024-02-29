@@ -1,3 +1,15 @@
-
+.subBtn {
+  background-color: #4CAF50;
+  color: red;
+  padding: 5px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.subBtn_active {
+  background-color: red;
+  color: #4CAF50;
+}
 
 /*# sourceMappingURL=style.css.map */
