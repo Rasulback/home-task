@@ -1,0 +1,14 @@
+{
+  "name": "home-work",
+  "version": "1.0.0",
+  "description": "'hw-10-24'",
+  "main": "(main.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rasulback",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
