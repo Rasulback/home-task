@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.food {
+    background: #eee5fe;
+    padding: 50px 0;
+}
+.food__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.food__list {
+    background: #6d5c99;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+}
+.food__card {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.food__image {
+    width: 100%;
+}
+.food__image-container {
+    display: inline-block;
+    width: 200px;
+}
+.food__name {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.food__price {
+    font-size: 25px;
+}
+
+.order {
+    background: #d1a8f1;
+    padding: 50px 0;
+}
+.order__basket {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+.order__info {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+}
+.order__info::before {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 100%;
+    background: grey;
+}
+.order__sum {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.order__sum-text {
+    font-size: 30px;
+}
+.order__list {
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.order__cart {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.2fr;
+}
+.order__name {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.order__price {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.order__remove {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+/*.order__receipt {*/
+/*    width: 300px;*/
+/*    border-top-left-radius: 10px;*/
+/*    border-bottom-left-radius: 10px;*/
+/*    padding: 20px;*/
+/*    position: absolute;*/
+/*    bottom: -15%;*/
+/*    right: 0;*/
+/*    background: #6b5c98;*/
+/*    color: white;*/
+/*    font-family: Arial, sans-serif;*/
+/*    font-size: 20px;*/
+/*    font-weight: bold;*/
+/*    box-shadow: -5px 0px 16px 0px rgba(0, 0, 0, 0.75);*/
+/*    cursor: pointer;*/
+/*}*/
